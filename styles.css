@@ -38,6 +38,50 @@ body{
     color: aqua;
 }
 
+.imgContainer:hover{
+    animation-name:glow;
+    animation-duration: 4s;
+}
+
+#image1{
+    animation-name:slideRight;
+    animation-duration: 1s; 
+}
+
+
+#image2{
+    animation-name:slideDown;
+    animation-duration: 1s; 
+}
+
+
+#image3{
+    animation-name:slideUp;
+    animation-duration: 1s; 
+}
+
+#image4{
+    animation-name:slideLeft;
+    animation-duration: 1s; 
+}
+
+
 @keyframes glow{
     50%{box-shadow:0px 0px 50px yellow;}
+}
+
+@keyframes slideLeft {
+    from{transform:translateX(100%)}
+}
+
+@keyframes slideRight {
+    from{transform:translateX(-100%)}
+}
+
+@keyframes slideUp {
+    from{transform:translateY(100%)}
+}
+
+@keyframes slideDown {
+    from{transform:translateY(-100%)}
 }

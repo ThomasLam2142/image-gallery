@@ -1,3 +1,7 @@
+body{
+    background-color: #272727;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -13,12 +17,17 @@
 
 .gallery:hover{
     border:1px solid hsl(0,0,20%);
+    
+}
 
+.imgElement{
+    padding: 5px;
 }
 
 .imgElement:hover{
-    border:3px solid #272727;
-
+    
+    animation-name:glow;
+    animation-duration: 4s;
 }
 
 .titleElement{
@@ -27,4 +36,8 @@
     justify-content: center;
     border:2px solid black;
     color: aqua;
+}
+
+@keyframes glow{
+    50%{box-shadow:0px 0px 50px yellow;}
 }
